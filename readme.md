@@ -12,3 +12,31 @@ Two main scripts are provided:
 
    Find more numerical counterexamples by randomly generate different $\sigma$ and $X$.
 
+
+## Prerequisites
+
+### Julia
+To run the search script, you need [Julia](https://julialang.org/) and the following packages:
+```julia
+using JuMP, GLPK, LinearAlgebra
+```
+
+### Python
+To run the verification script, you need Python 3 and the [QuTiP](https://qutip.org/) library:
+```bash
+pip install qutip numpy
+```
+
+## Usage
+
+### 1. Search for a Counterexample
+Execute the Julia script to find a new random counterexample:
+```bash
+julia FoundCounter.jl
+```
+
+### 2. Verify the Result
+The Python script is pre-loaded with the specific values used in the paper (Theorem 4.1). Run it to see the violation of the optimality condition:
+```bash
+python CounterExample.py
+```
