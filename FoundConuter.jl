@@ -7,8 +7,8 @@ using Printf
 attempts = 0
 found = false
 while !found
-	global attempts  # 声明使用全局变量
-    global found     # 声明使用全局变量
+	global attempts  
+    global found     
 	attempts += 1
 	
 	# step1. Generate Random sigma (vector)
