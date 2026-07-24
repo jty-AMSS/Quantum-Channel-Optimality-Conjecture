@@ -1,6 +1,6 @@
 #  Codes for "A Counterexample to the Optimality Conjecture in Convex Quantum Channel Optimization"
 
-This repository contains codes with the paper: A Counterexample to the Optimality Conjecture in Convex Quantum Channel Optimization  [arXiv:2512.22863](https://arxiv.org/abs/2512.22863)
+This repository contains codes for the paper: A Counterexample to the Optimality Conjecture in Convex Quantum Channel Optimization  [arXiv:2512.22863](https://arxiv.org/abs/2512.22863)
 
 ## Key Scripts
 Two main scripts are provided:
@@ -18,7 +18,7 @@ Two main scripts are provided:
 ### Julia
 To run the search script, you need [Julia](https://julialang.org/) and the following packages:
 ```julia
-using JuMP, GLPK, LinearAlgebra
+using JuMP, GLPK, LinearAlgebra, HiGHS
 ```
 
 ### Python
